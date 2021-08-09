@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="38" id="KGk-i7-Jjw" customClass="HourlyCell" customModule="MyWeartherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="38"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="sbc-TJ-a25">
+                        <rect key="frame" x="0.0" y="0.0" width="271" height="38"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NcF-gP-kpQ">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sbc-TJ-a25" secondAttribute="bottom" id="3bo-yQ-Lu2"/>
+                    <constraint firstAttribute="trailing" secondItem="sbc-TJ-a25" secondAttribute="trailing" id="NDj-MC-z2G"/>
+                    <constraint firstAttribute="bottom" secondItem="sbc-TJ-a25" secondAttribute="bottom" id="Ubd-cb-STk"/>
+                    <constraint firstItem="sbc-TJ-a25" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZVY-Va-2im"/>
+                    <constraint firstItem="sbc-TJ-a25" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gaJ-Yx-ld2"/>
+                    <constraint firstAttribute="trailing" secondItem="sbc-TJ-a25" secondAttribute="trailing" id="k4A-qz-aXb"/>
+                    <constraint firstItem="sbc-TJ-a25" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lAF-Ua-QMb"/>
+                    <constraint firstItem="sbc-TJ-a25" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yH8-kd-CoA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="sbc-TJ-a25" id="Iyi-ss-lox"/>
+            </connections>
+            <point key="canvasLocation" x="213.768115942029" y="64.955357142857139"/>
+        </tableViewCell>
+    </objects>
+</document>
